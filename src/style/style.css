@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.developer {
+  width: 100vw;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  position: fixed;
+  text-align: center;
+  top: 10px;
+}
+body{
+  color: #fff;
+  min-height: 95.4vh;
+  background-image: repeating-linear-gradient(to bottom left, #31c7d4, #341731);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.choices{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+span{
+  font-family: 'Anton', sans-serif;
+  line-height: 0.87;
+}
+span:hover{
+  color: #000;
+  cursor: pointer;
+}
+#rock{
+  font-size: 200px;
+}
+#paper{
+  font-size: 165px;
+}
+#scissor{
+  font-size: 108px;
+}
+#startGame{
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: transparent;
+  width: 250px;
+  margin-top: 20px;
+  padding: 15px;
+  border: #fff solid 1px;
+  border-radius: 5px;
+}
+#startGame:hover{
+  cursor: pointer;
+  border-color: #000;
+  color: #000;
+}
+.gameRules{
+  font-family: 'Roboto', sans-serif;
+  padding-top: 20px;
+  width: 375px;
+  font-size: 15px;
+  text-align: justify;
+}
+.gameArea {
+  width: 100%;
+  bottom: 30%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  pointer-events: none;
+}
+#playerImg{
+  width: 300px;
+}
+#botImg{
+  width: 300px;
+  transform: scaleX(-1);
+}
+
+@media (max-width: 970px) {
+  #rock{
+    font-size: 140px;
+  }
+  #paper{
+    font-size: 115.5px;
+  }
+  #scissor{
+    font-size: 75.6px;
+  }
+  .gameRules{
+    width: 265px;
+    font-size: 10px;
+    text-align: justify;
+  }
+  #playerImg, #botImg{
+    width: 175px;
+  }
+}
+
+@media (max-width: 620px){
+  .gameArea {
+    width: 100vw;
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    pointer-events: none;
+  }
+}
